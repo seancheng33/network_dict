@@ -23,7 +23,7 @@ def load_word_detail(keyword):
     # 连接数据文件，读取里面的英文单词或词组的内容
     with sqlite3.connect("data.db3") as datacon:
         detailList = []
-        detail = datacon.execute("select * from network where en_full='"+keyword+"';")
+        detail = datacon.execute("select * from network where en_full='"+keyword+"' or en_abbreviate='"+keyword+"';")
         for item in detail:
             detailList.append(item[1:])
     # 返回这个内容
