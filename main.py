@@ -110,7 +110,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowIcon(QIcon("source/dict.ico"))
+        MainWindow.setWindowIcon(QIcon("source/img/dict.ico"))
         MainWindow.setWindowTitle(_translate("MainWindow", "网工专业名词字典"))
         self.textEdit_2.setPlaceholderText(_translate("MainWindow", ""))
         self.pushButton.setText(_translate("MainWindow", "点击查询"))
